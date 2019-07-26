@@ -11,7 +11,7 @@ class EmailAddressParser
    end
 
     def parse 
-     array = @emails.split(/[ , ]/).uniq 
+     array = @emails.split(/[ , ]/).uniq #RegEx
      array.delete_if {|element| element.empty?} 
      array
    end
